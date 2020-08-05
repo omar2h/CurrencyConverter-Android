@@ -2,4 +2,8 @@
     <string name="app_name">CurrencyConverter</string>
     <string name="egp">Egyptian Pound</string>
     <string name="usd">United States Dollar</string>
+    <string-array name="currencies">
+        <item>United States Dollar</item>
+        <item>Egyptian Pound</item>
+    </string-array>
 </resources>

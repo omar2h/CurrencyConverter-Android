@@ -11,57 +11,54 @@
         android:id="@+id/input1"
         android:layout_width="159dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         android:background="@android:drawable/editbox_background_normal"
-        android:chainUseRtl="false"
         android:ems="10"
         android:inputType="textPersonName|numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Spinner
+        android:id="@+id/spin1"
         android:layout_width="180dp"
         android:layout_height="48dp"
-        android:chainUseRtl="false"
-        android:text="@string/usd"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/input1"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:chainUseRtl="false"
-        android:text="@string/egp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spin2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/input2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/spin1" />
 
     <EditText
         android:id="@+id/input2"
         android:layout_width="159dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
         android:background="@android:drawable/editbox_background_normal"
-        android:chainUseRtl="false"
         android:ems="10"
         android:inputType="textPersonName|numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/input1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
