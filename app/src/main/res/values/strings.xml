@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="egp">Egyptian Pound</string>
+    <string name="usd">United States Dollar</string>
+</resources>
